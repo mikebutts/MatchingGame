@@ -7,9 +7,14 @@
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
-        
+
             <Button x:Name="PlayAgainButton" Text="Play Again?" FontSize="Large" Clicked="PlayAgainButton_Clicked"/>
-            <Label x:Name="TimeElapsed" Text="Time Elapsed: 0.0 seconds" FontSize="Large" />
+            <HorizontalStackLayout Spacing="20">
+                <Label x:Name="TimeElapsed" Text="Time Elapsed: 0.0 seconds" FontSize="Large" />
+                <Label x:Name="MatchesFoundLbl" Text="Matches Found: " IsVisible="false" FontSize="Large" />
+            </HorizontalStackLayout>
+
+            
 
             <FlexLayout x:Name="AnimalButtons" Wrap="Wrap" MaximumWidthRequest="400" IsVisible="false">
                 <Button BackgroundColor="LightBlue"  BorderColor="Black" BorderWidth="1" HeightRequest="100" WidthRequest="100" FontSize="50" Clicked="Button_Clicked" />
